@@ -1,0 +1,140 @@
+link to codepen from part 2:
+https://codepen.io/raphaelhebert-the-scripter/pen/LYbqPLY?editors=1100review questions/answers:
+
+    1. What is Semantic HTML? 
+	Semantic HTML is the use of HTML elements with a meaning. Semantic elements can be use for SEO to facilitate  user search.
+
+    2. What is HTML used for? 
+	HTML is a markup language and is used for positioning elements on a page.
+
+    3. What is an attribute and where do we put it? 
+	Attributes are written in the opening tab of an elements> They specify some characteristics of the element. They are written as so: name='value', if the value is a boolean only the name of the attribute can be written.
+
+    4. What is the h1 tag used for? How many times should I use it on a page?
+	h1 is the main title of a page. Only one must be used per page.     5. Name two tags that have required attributes
+
+    6. What do we put in the head of our HTML document?
+	The head of a HTML document contains the title tag, some links to external ressources such as css stylesheets and some meta informations (using the meta tag)
+
+    7. What is an id? 
+	An id is an attribute use to identify a single element. When used in CSS it has a high specificity (1000)
+
+    8. What elements can I add an id to? 
+	Any elements can have ids
+
+    9. How many times can I use the same id on a page? 
+	For a given page, ID must be unique, one element per id.
+
+    10. What is a class? 
+	A class is an attribute that can be used to style groups of elements. Unlike ids many elements can have the same class. Classes have lower specificity than id (100)
+
+    11. What elements can I add a class to? 
+	To any html elements
+
+    12. How many times can I use the same class on a page? 
+	A class can be used for any number of elements
+
+    13. How do I get my link to open in a new tab?
+	With the target attribute set to '_blank'
+
+    14. What is the alt attribute in the image tag used for? 
+	This attribute is used in case of the value given in the src attribute doesn't link to any image. The value given to the alt attribute will be displayed (text value)
+
+    15. How do I reference an id?
+	with the symbol: #
+
+    16. What is the difference between a section and a div
+	a div doesn't have any semantic meaning and so is used for styling purposes only.
+
+    17. What is CSS used for? 
+	CSS is used to change the style of an html page
+
+    18. How to we select an element? Example - every h2 on the page
+	elements can be selected with the element selector. Element selectors consist of the name of the element they target. For example h2 element selector is written h2. Element selector have a low specificity (1)
+
+    19. What is the difference between a class and an id? - Give me an example of when I might use each one
+	A class can regroup many element while id are specific to a unique element. The specificity of id selectors is higher than the specificity of class selector. If you want to style some images in a gallery you can define a class and use to every images of your gallery.
+
+    20. How do we select classes in CSS?
+	Classes can be selected with the class selector Class selector are written by a dot followed by the name of the class.
+
+    21. How do we select a p element with a single class of “human””?
+	With the following selector: p .human
+Selectors can be combined together to form more specific selectors.
+
+    22. What is a parent child selector? When would this be useful? 
+	A parent child selector is a selector that is used to select all the children from a parent element, syntax: parent>children . For example: section>p selector will select all the paragraphs included in a section element.
+
+    23. How do you select all links within a div with the class of sidebar?
+	With the following selector: div .sidebar links
+
+    24. What is a pseudo selector?
+	Pseudo selector are selector that does not designate directly elements. They designate elements by their relation to other element (example: :before, :first-line...) or some actions (example: :hover)
+
+    25. What do we use the change the spacing between lines?
+	The line-height property in relation with the font-size property.
+
+    26. What do we use to change the spacing between letters?
+	The letter-spacing property
+
+    27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+	CAPITALS: 'text-transform: uppercase;'
+	lowercase: 'text-transform: lowercase;'
+	lowercase: 'text-transform: Capitalize;'
+
+    28. How do I add a 1px border around my div that is dotted and black?
+	'border: 1px dotted black;'
+
+    29. How do I select everything on the page? 
+	By using the universal selector: *
+
+    30. How do I write a comment in CSS?
+	Write comment with /* to open the comment and */ to close it
+
+    31. How do I find out what file I am in, when I am using the command line? 
+	The pwd  command will print the path of the current working directory
+
+    32. Using the command line - how do I see a list of files/folders in my current folder?
+	The ls command list all the files (-a option to include the hidden files and folders) in the working directory
+
+    33. How do I remove a file via the command line? Why do I have to be careful with this? 
+	The rm followed by the name of the file ( rm filename) command delete a file. You must be careful because the file is permanently deleted ( not sent to trash).
+ 
+    34. Why should I use version control? 
+	To keep trace of the change made to a file. It keep access to the different versions.
+
+    35. How often should I commit to github?
+	When adding a new feature to a project or when having made significant changes.
+
+    36. What is the command we would use to push our repo up to github? 
+	The 'git push' command will push the change to GitHub 
+
+    37. Walk me through Lambda's git flow. 
+	- Fork an existing project: this makes a copy of the forked repository in your own GitHub
+	-add collaborators
+	- clone the repo: this will copy the project from remote (GitHub) to local ( your own computer)
+	- create a new branch: create a new branch to save your changes
+	- add some new stuff, commit it and push it 
+	- submit pull request so your changes can be reviewed by someone.
+
+Stretch Questions
+
+    1. What is the difference between an inline element and a block element?
+	Inline elements are displayed inline (not on a new line) and have the width of their content while block element are displayed on a new line, have the width of their parent element and the height of their content.
+
+    2. What happens when an element is positioned absolutely? 
+	When an element is positioned absolutely it is taken off the normal flow of the page: its position depends of its closest parent absolutely or relatively positioned, it does not contribute to the size of its parents.it can be sized with the box offset properties: top, bottom, left, right.
+ 
+    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+	Set the width property to the desired value, set height property to auto.
+
+    4. Name 3 elements that are display block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+	Block: <p>, <div>, <section>
+	Inline: <span>, <button>
+	inline-block: <img>
+
+    5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
+	The box model aim to represent html element as rectangles (with height and width).
+	The rectangle contains the the content in the center, the padding around the content, the border around the padding and the margin around the border. The width of the whole rectangle can be calculated in different way depending on the value of the box-sizing property. If this property is set to content-box the values of height and width for a given element will be applied to its content and will not include the size of the border and the padding. This is the way you can make all element of the box respect the size that was given to them.
+
+   --> 
